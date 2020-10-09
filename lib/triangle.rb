@@ -2,28 +2,28 @@ class Triangle
 attr_accessor :isosceles, :equilateral, :scalene
 
 class TriangleError < StandardError
-  end 
-end 
+  end
+end
 
   def initialization(a,b,c)
     @a = a
     @b = b
     @c = c
-  end 
+  end
 
   def equilateral
     a == b == c
   end
-    
-  end 
+
+  end
 
   def kind
-  end 
+  end
 
 
-  
 
-  
+
+
 
 
 end
