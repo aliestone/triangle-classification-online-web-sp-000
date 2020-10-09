@@ -18,3 +18,11 @@ end
     return :isosceles if a == b or b == c
     return :scalene
   end
+
+  def self.type
+    a, b, c = [a, b, c].sort
+    raise TriangleError if a <= 0 or a + b <= c
+    return :equilateral if a == c
+    return :isosceles if a == b or b == c
+    return :scalene
+  end
