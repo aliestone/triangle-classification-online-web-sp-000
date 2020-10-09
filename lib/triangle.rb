@@ -11,14 +11,18 @@ end
     @c = c
   end
 
-  def equilateral
-    a == b == c
+  def kind (a, b, c)
+    a, b, c = [a, b, c].sort
+    raise TriangleError if a <= 0 or a + b <= c
+    return :equilateral if a == c
+    return :isosceles if a == b or b == c
+    return :scalene
+    end
   end
+end
 
-  end
+end
 
-  def kind
-  end
 
 
 
