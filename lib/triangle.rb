@@ -18,4 +18,3 @@ end
     return :isosceles if a == b or b == c
     return :scalene
   end
-end
